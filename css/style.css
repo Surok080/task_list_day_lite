@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url(/Users/aleksandrkrivov/Documents/Programm/GitHub_io/surok080.github.io/Task_List_lite/scss/rest.css);
+body {
+  background-color: rgba(122, 105, 105, 0.382);
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 10px 10px;
+  }
+}
+
+.header {
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  text-align: center;
+  padding: 20px;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.task-create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #111111;
+  padding: 10px 0;
+}
+
+.task-create__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+}
+
+.task-create__imput {
+  padding: 10px 24px 10px 10px;
+}
+
+.task-create__imput input {
+  outline: 1px solid #111111;
+  border-radius: 2px;
+  height: 25px;
+  padding: 1px 0 1px 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.task-create__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+
+.task-create__btn button {
+  border-radius: 2px;
+  padding: 4px 4px;
+  width: 97px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494949;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 2px rgba(122, 105, 105, 0.382);
+          box-shadow: 4px 4px 2px rgba(122, 105, 105, 0.382);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-create__btn button:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 2px 2px 2px rgba(122, 105, 105, 0.382);
+          box-shadow: 2px 2px 2px rgba(122, 105, 105, 0.382);
+}
+
+.task-create__generate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.task-create__btnAdd button {
+  padding: 5px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: aliceblue;
+  background-color: #111111;
+}
+
+@media (max-width: 425px) {
+  .task-create__btnAdd button {
+    padding: 7px 7px;
+    width: 58px;
+    border-radius: 25px;
+  }
+}
+
+.task__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  padding: 10px 0;
+}
+
+.task__item.removeItem {
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
+}
+
+.task__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+}
+
+.task__text {
+  word-wrap: break-word;
+  max-width: 230px;
+  padding: 0 10px 10px;
+}
+
+.task__btn {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.task__btn button {
+  border-radius: 2px;
+  padding: 4px 4px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494949;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 2px rgba(122, 105, 105, 0.382);
+          box-shadow: 4px 4px 2px rgba(122, 105, 105, 0.382);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.task__btn button:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 2px 2px 2px rgba(122, 105, 105, 0.382);
+          box-shadow: 2px 2px 2px rgba(122, 105, 105, 0.382);
+}
+
+.task__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.task__status-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 4px solid;
+  border-color: #5f0f0f;
+  border-radius: 45%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: moving 5s infinite linear;
+          animation: moving 5s infinite linear;
+}
+
+.task__status-indicatorSmall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 4px solid;
+  border-color: #5f0f0f;
+  border-radius: 40%;
+  width: 40px;
+  height: 40px;
+  animation: moving 3s infinite linear reverse;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.active {
+  border-color: #2e632e;
+}
+
+@-webkit-keyframes moving {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes moving {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.element {
+  /* задать анимацию «moving» к текущему элементу */
+  -webkit-animation: moving 3s infinite linear;
+          animation: moving 3s infinite linear;
+  /* указать точку координат, вокруг которой будет вращаться объект */
+  -webkit-transform-origin: -80px -80px;
+          transform-origin: -80px -80px;
+}

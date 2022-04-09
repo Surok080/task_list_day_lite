@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task_List_Lite</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="header__title">Task list</div>
+		</div>
+
+		<!-- add task -->
+		<div class="task-create">
+			<div class="task-create__control">
+				<div class="task-create__imput">
+					<input onkeypress="chekEnter(event)" id="task-text" type="text" placeholder="Enter text...">
+				</div>
+				<div class="task-create__btn">
+					<button id="btn-removeAll">remove all</button>
+					<button id="btn-readyAll">ready all</button>
+				</div>
+			</div>
+			<div class="task-create__generate">
+				<div class="task-create__btnAdd">
+					<button id="btn-addTask">add task</button>
+				</div>
+			</div>
+		</div>
+		<!-- add task -->
+
+		<div class="task">
+		</div>
+	</div>
+
+
+
+	<script src="app/main.js"></script>
+</body>
+
+</html>
