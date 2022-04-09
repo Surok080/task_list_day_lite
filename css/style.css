@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(/Users/aleksandrkrivov/Documents/Programm/GitHub_io/surok080.github.io/Task_List_lite/scss/rest.css);
 body {
   background-color: rgba(122, 105, 105, 0.382);
@@ -171,7 +170,7 @@ body {
 .task__btn button {
   border-radius: 2px;
   padding: 4px 4px;
-  width: 100px;
+  width: 97px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -278,10 +277,8 @@ body {
 }
 
 .element {
-  /* задать анимацию «moving» к текущему элементу */
   -webkit-animation: moving 3s infinite linear;
           animation: moving 3s infinite linear;
-  /* указать точку координат, вокруг которой будет вращаться объект */
   -webkit-transform-origin: -80px -80px;
           transform-origin: -80px -80px;
 }

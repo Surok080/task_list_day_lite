@@ -1,4 +1,6 @@
+// start config
 @import 'rest.css';
+// /start config
 @mixin btn {
 	// outline: 1px solid rgba(111, 109, 109, 0);
 	border-radius: 2px;
@@ -21,6 +23,7 @@
 body{
 	background-color: rgba(122, 105, 105, 0.382);
 }
+
 .wrapper {
 max-width: 450px;
 margin: 0 auto;
@@ -31,6 +34,8 @@ padding: 40px 10px;
 		padding: 10px 10px;
 	}
 }
+
+// header
 .header {
 	border-top: 1px solid rgb(17, 17, 17);
 	border-bottom: 1px solid rgb(17, 17, 17);
@@ -41,11 +46,13 @@ padding: 40px 10px;
 			font-weight: bold;
 		}
 }
+// /header
+
+// add Task
 .task-create {
 display: flex;
 border-top: 1px solid rgb(54, 54, 54);
 border-bottom: 1px solid rgb(17, 17, 17);
-
 padding: 10px 0;
 		&__control {
 			display: flex;
@@ -96,6 +103,9 @@ padding: 10px 0;
 		border-radius: 25px;
 	}
 }
+// add Task
+
+// creat task
 .task {
 
 		&__item{
@@ -157,6 +167,7 @@ padding: 10px 0;
 			animation: moving 3s infinite linear reverse;
 		}
 }
+// /creat task
 
 @keyframes opacity {
 	from {
@@ -178,11 +189,7 @@ padding: 10px 0;
 	100% {transform: rotate(-360deg);}
 }
 
-
 .element {
-	/* задать анимацию «moving» к текущему элементу */
 	animation: moving 3s infinite linear;
-
-	/* указать точку координат, вокруг которой будет вращаться объект */
 	transform-origin: -80px -80px;
 }
